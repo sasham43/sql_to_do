@@ -1,6 +1,7 @@
 body{
   min-height: 100%;
   color: white;
+  background-color: #7788AA;
 }
 
 ul{
@@ -18,11 +19,12 @@ div{
 
 input{
   color: white;
-  height: 34px;
+  height: 40px;
   background-color: #152B55;
   box-shadow: none;
   margin: 0;
   border: 0;
+  font-size: 25px;
 }
 
 form{
@@ -34,7 +36,7 @@ li{
 }
 
 h2{
-  /*margin-top: 10px;*/
+  margin-top: 0;
 }
 
 .btn{
@@ -99,6 +101,10 @@ h2{
   height: 30px;
 }
 
+.addTasks.col-sm-12{
+  height: 200px;
+}
+
 #taskInput{
   width: 80%;
 }
@@ -117,4 +123,6 @@ h2{
   background-color: #152B55;
   color: white;
   vertical-align: top;
+  height: 40px;
+  width: 45px;
 }

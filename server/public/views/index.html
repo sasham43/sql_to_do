@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>To Do</title>
 
     <!-- Libraries -->
@@ -16,15 +17,15 @@
   </head>
   <body>
     <div class="container row">
-      <div class="addTasks col-md-4">
-        <h2>Add Task</h2>
+      <div class="addTasks col-md-4 col-sm-12">
+        <h2 class="text-center">Add Task</h2>
         <form class="inputContainer">
           <input class="textInput" type="text" id="taskInput" />
           <button class="btn" type="submit" value="+" id="addTask" aria-label="addTask"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
         </form>
       </div>
 
-      <div class="showTasks col-md-8">
+      <div class="showTasks col-md-8 col-sm-12">
         <h2 class="text-center">To Do</h2>
         <ul class="taskContainer">
 
@@ -43,36 +44,10 @@
           <div class="modal-footer">
             <button id="yesDelete" class="modalButton btn btn-success" data-dismiss="modal">Yes</button>
             <button id="noDelete" class="modalButton btn btn-danger" data-dismiss="modal">No</button>
-          </div>          
+          </div>
         </div>
 
       </div>
     </div>
-
-      <!-- Trigger the modal with a button -->
-  <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
-
-  <!-- Modal -->
-  <div id="myModal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-          <p>Some text in the modal.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
   </body>
 </html>

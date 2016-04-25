@@ -13,6 +13,7 @@ router.post('/', function(req, res){
       var task = req.body.name;
       var completed = req.body.completed;
       var query = client.query('INSERT INTO tasks (name, completed) VALUES ($1, $2) RETURNING name, completed', [task, completed]);
+      var result = '';
 
       query.on('error', function(err){
         console.log('Error posting to database:', err);
@@ -21,12 +22,13 @@ router.post('/', function(req, res){
 
       query.on('row', function(row){
         console.log('Task added:', row);
-        res.send(row);
+        result = row;
       });
 
       query.on('end', function(){
         console.log('Task added successfully.');
-        done();
+        res.send(result);
+        done();        
       });
     }
   });

@@ -1,0 +1,98 @@
+body{
+  min-height: 100%;
+  color: white;
+}
+
+ul{
+  list-style-type: none;
+  font-size: 25px;
+}
+
+li>button:nth-child(2){
+  margin-right: 5px;
+}
+
+div{
+  height:1000px;
+}
+
+input{
+  color: white;
+  height: 34px;
+  background-color: #152B55;
+  box-shadow: none;
+  margin: 0;
+  border: 0;
+}
+
+form{
+  padding: 0;
+}
+
+li{
+  padding: 2px;
+}
+
+h2{
+  /*margin-top: 10px;*/
+}
+
+.btn{
+  box-shadow: none;
+  margin: none;
+}
+
+.disabled {
+  /*background-color: #999;*/
+  opacity: 0.65;
+}
+
+.addTasks{
+  background-color: #7788AA;
+  /*min-height: 100%;*/
+
+}
+
+.showTasks{
+  background-color: #689D99;
+}
+
+.container{
+  margin: 0;
+  padding: 0;
+}
+
+.row{
+  height: 100%;
+  width: 100%;
+}
+
+.completeButton, .removeButton{
+  background-color: #0D4E4A;
+}
+
+.completeButton:hover, .removeButton:hover{
+  background-color: white;
+  color: #0D4E4A;
+  outline-color: #003430;
+}
+
+#taskInput{
+  width: 80%;
+}
+
+#taskInput:focus{
+  outline-color: #7788AA;
+}
+
+#addTask:focus, #addTask:hover{
+  background-color: white;
+  color: #152B55;
+  outline-color: #061739;
+}
+
+#addTask{
+  background-color: #152B55;
+  color: white;
+  vertical-align: top;
+}

@@ -20,6 +20,7 @@ $(function(){
     });
   });
 
+  // mark task as completed
   $(document).on("click", ".completeButton", function(){
     console.log('completeButton this', $(this).attr("id"));
     var taskID = getID($(this));
@@ -35,17 +36,23 @@ $(function(){
     });
   });
 
+  // remove task
   $(document).on("click", ".removeButton", function(){
+    $("#confirmModal").modal('show');
     var taskID = getID($(this));
-    $.ajax({
-      url: '/tasks/' + taskID,
-      method: 'DELETE'
-    }).done(function(response){
-      console.log('ajax delete call worked', response);
-      getTasks();
-    }).fail(function(response){
-      console.log('ajax put call failed', response);
+    $(document).on("click", "#yesDelete", function(){
+
+      $.ajax({
+        url: '/tasks/' + taskID,
+        method: 'DELETE'
+      }).done(function(response){
+        console.log('ajax delete call worked', response);
+        getTasks();
+      }).fail(function(response){
+        console.log('ajax put call failed', response);
+      });
     });
+
   });
 
   getTasks();

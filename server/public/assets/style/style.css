@@ -77,6 +77,28 @@ h2{
   outline-color: #003430;
 }
 
+.fade.in{
+  opacity: .7;
+  background-color: black;
+}
+
+.modal-dialog{
+  margin-top: 50px;
+  height: 150px;
+  border: solid 1px white;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 25px;
+}
+
+.modal-body{
+  height: 100px;
+}
+
+.modal-footer{
+  height: 30px;
+}
+
 #taskInput{
   width: 80%;
 }

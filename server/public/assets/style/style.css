@@ -15,6 +15,8 @@ li>button:nth-child(2){
 
 div{
   height:1000px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 input{
@@ -45,14 +47,11 @@ h2{
 }
 
 .disabled {
-  /*background-color: #999;*/
   opacity: 0.65;
 }
 
 .addTasks{
   background-color: #7788AA;
-  /*min-height: 100%;*/
-
 }
 
 .showTasks{
@@ -102,7 +101,7 @@ h2{
 }
 
 .addTasks.col-sm-12{
-  height: 200px;
+  height: 120px;
 }
 
 #taskInput{

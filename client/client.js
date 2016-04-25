@@ -83,6 +83,16 @@ $(function(){
 
   // this function builds html elements based on an array input
   function displayTasks(list){
+    // sort array based on boolean complete value
+    list.sort(function(a, b){
+      if (a.completed && b.completed === false){
+        return 1;
+      } else if (a.completed === false && b.completed){
+        return -1;
+      } else if (a.completed === b.completed){
+        return 0;
+      }
+    });
     var str = '';
     list.map(function(object){
       var completeButtonAttribute = '';
